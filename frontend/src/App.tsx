@@ -14,7 +14,12 @@ function App() {
 
 	return (
 		<div className="App">
-			<button onClick={handleClick}>Click Here</button>
+			<button className="mainButton" onClick={handleClick}>
+				Click Here
+			</button>
+			<p>
+				<b>Warning!</b> the content on the sites is not moderated. There is a high possibility of coming across NSFW content.
+			</p>
 		</div>
 	);
 }
