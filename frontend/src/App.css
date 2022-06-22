@@ -4,17 +4,32 @@
 	align-items: center;
 	flex-direction: column;
 	height: 100vh;
+	padding: 2rem;
 }
 
 .mainButton {
-	background-color: red;
-	border: none;
+	background: rgb(127, 29, 29);
+	background: -moz-linear-gradient(45deg, rgba(127, 29, 29, 1) 0%, rgba(220, 38, 38, 1) 100%);
+	background: -webkit-linear-gradient(45deg, rgba(127, 29, 29, 1) 0%, rgba(220, 38, 38, 1) 100%);
+	background: linear-gradient(45deg, rgba(127, 29, 29, 1) 0%, rgba(220, 38, 38, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7f1d1d",endColorstr="#dc2626",GradientType=1);
+	border: 20px solid #555555;
 	outline: none;
 	width: 20rem;
 	height: 20rem;
 	border-radius: 20rem;
 	color: white;
-	font-size: 5rem;
+	font-size: 4rem;
+	font-weight: bolder;
 	box-shadow: 10px 10px 20px #332222;
 	margin: 5rem;
+}
+
+@media only screen and (max-width: 500px) {
+	.mainButton {
+		width: 15rem;
+		height: 15rem;
+		font-size: 3rem;
+		margin: 2rem;
+	}
 }
