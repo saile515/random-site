@@ -28,12 +28,6 @@ async fn domain(data: web::Data<DomainData>) -> Result<impl Responder, Box<dyn s
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
-    // let mut client_options = ClientOptions::parse("mongodb://localhost:27017").await?;
-    // client_options.app_name = Some("My App".to_string());
-    // let db_client = Client::with_options(client_options)?;
-    // let db = db_client.database("random-site");
-    // let collection = db.collection::<Domain>("domains");
-    // let domains = collection.find(doc!{}, None).await?.try_collect().await.unwrap_or_else(|_| vec![]);
     let file_path = get_first_arg()?;
     let file = File::open(file_path)?;
     let mut domains: Vec<String> = vec![];
@@ -58,7 +52,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
             .app_data(data.clone())
             .service(domain)
     })
-    .bind(("192.168.1.244", 8080))?
+    .bind("0.0.0.0:8080")?
     .run()
     .await?;
 

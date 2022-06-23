@@ -1,6 +1,6 @@
 import "./App.css";
 
-import React from "react";
+import { Helmet } from "react-helmet";
 
 function App() {
 	function handleClick() {
@@ -14,6 +14,10 @@ function App() {
 
 	return (
 		<div className="App">
+			<Helmet>
+				<title>Random Site Finder</title>
+				<meta name="description" content="Discover new and interesting websites. You don't know what you will get!" />
+			</Helmet>
 			<h1>Random Site Finder</h1>
 			<button className="mainButton" onClick={handleClick}>
 				Click Here
