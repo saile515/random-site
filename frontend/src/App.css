@@ -23,6 +23,17 @@
 	font-weight: bolder;
 	box-shadow: 10px 10px 20px #332222;
 	margin: 5rem;
+	cursor: pointer;
+}
+
+.copyright {
+	position: fixed;
+	bottom: 0;
+	text-align: center;
+}
+
+.copyright a {
+	text-decoration: none;
 }
 
 @media only screen and (max-width: 500px) {

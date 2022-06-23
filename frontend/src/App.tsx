@@ -27,6 +27,13 @@ function App() {
 			<p>
 				<b>Warning!</b> The content on the sites is not moderated. There is a high possibility of coming across NSFW content.
 			</p>
+			<p className="copyright">
+				&copy;{" "}
+				<a href="https://www.eliasjorgensen.se" target="_blank">
+					Elias Jörgensen
+				</a>{" "}
+				2022
+			</p>
 		</div>
 	);
 }
