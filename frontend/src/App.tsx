@@ -29,7 +29,7 @@ function App() {
 			</p>
 			<p className="copyright">
 				&copy;{" "}
-				<a href="https://www.eliasjorgensen.se" target="_blank">
+				<a href="https://www.eliasjorgensen.se" target="_blank" rel="noreferrer">
 					Elias Jörgensen
 				</a>{" "}
 				2022
