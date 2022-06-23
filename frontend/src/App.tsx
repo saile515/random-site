@@ -16,7 +16,9 @@ function App() {
 		<div className="App">
 			<Helmet>
 				<title>Random Site Finder</title>
+				<meta property="og:title" content="Random Site Finder" />
 				<meta name="description" content="Discover new and interesting websites. You don't know what you will get!" />
+				<meta property="og:description" content="Discover new and interesting websites. You don't know what you will get!" />
 			</Helmet>
 			<h1>Random Site Finder</h1>
 			<button className="mainButton" onClick={handleClick}>
